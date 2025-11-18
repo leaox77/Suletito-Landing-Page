@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Causten-BoldOblique';
+    src: url('Causten-BoldOblique.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Causten-MediumOblique';
+    src: url('Causten-MediumOblique.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Causten-RegularOblique';
+    src: url('Causten-RegularOblique.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
