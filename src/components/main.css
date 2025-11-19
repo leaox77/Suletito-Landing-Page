@@ -1,0 +1,96 @@
+/* ===== GRADIENTE ESTÁTICO ===== */
+.animate-gradient {
+  background: linear-gradient(to bottom, 
+       /* Verde (muy poquito arriba) */
+         #E0F7E5 10%,    /* Verde predominante */
+    #FFF2D0 100%   /* Amarillo predominante */
+  );
+}
+
+/* ===== ANIMACIÓN DE ENTRADA DESDE ABAJO ===== */
+@keyframes riseFromBottom {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Imagen inferior - Primera (se queda en bottom:0) */
+.animate-rise-slow-1 {
+  animation: riseFromBottom 1s ease-out forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
+}
+
+/* Imagen del medio - Segunda (se desplaza -100% hacia arriba) */
+.animate-rise-slow-2 {
+  animation: riseFromBottom 1s ease-out forwards;
+  animation-delay: 1.8s;
+  opacity: 0;
+}
+
+/* Imagen superior - Tercera (se desplaza -200% hacia arriba) */
+.animate-rise-slow-3 {
+  animation: riseFromBottom 1s ease-out forwards;
+  animation-delay: 2.7s;
+  opacity: 0;
+}
+
+/* Texto - Último */
+.animate-rise-slow-4 {
+  animation: riseFromBottom 1s ease-out forwards;
+  animation-delay: 3.6s;
+  opacity: 0;
+}
+
+/* Eliminar scroll */
+html, body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Asegurar que las animaciones solo se ejecuten una vez */
+.animate-rise-slow-1,
+.animate-rise-slow-2,
+.animate-rise-slow-3,
+.animate-rise-slow-4 {
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+/* ===== ANIMACIÓN DE REBOTE ===== */
+@keyframes bounceRise {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-20px); /* Sube un poco más */
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(10px); /* Baja un poco */
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Aplicar animación de rebote al título y subtítulo */
+.animate-bounce-rise {
+  animation: bounceRise 1.2s ease-out forwards;
+  animation-delay: 4.6s;
+  opacity: 0;
+}
