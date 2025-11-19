@@ -1,4 +1,8 @@
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+import FooterVCT from "./components/FooterVCT";
+import Inclusion from "./components/Inclusion";
+import Impulsados from "./components/Impulsados";
 
 function App() {
   return (
@@ -13,6 +17,10 @@ function App() {
           Tu landing page ya está funcionando con Tailwind y React.
         </p>
       </main>
+      <FooterVCT/>
+      <Inclusion/>
+      <Impulsados/>
+      <Footer/>
     </>
   );
 }
