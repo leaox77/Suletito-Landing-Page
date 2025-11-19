@@ -5,6 +5,7 @@ import "../components/main.css";
 
 export default function Main() {
   return (
+    // Cambiado a h-screen para contener las imágenes absolutamente
     <main className="relative w-full h-screen overflow-hidden bg-gradient-to-b from-primary to-secondary animate-gradient pt-20">
 
       {/* ===== CONTENEDOR DE IMÁGENES ===== */}
@@ -59,7 +60,6 @@ export default function Main() {
 
         </div>
       </div>
-
 
     </main>
   );

@@ -47,18 +47,7 @@
   opacity: 0;
 }
 
-/* Eliminar scroll */
-html, body {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
 
-#root {
-  height: 100vh;
-  overflow: hidden;
-}
 
 /* Asegurar que las animaciones solo se ejecuten una vez */
 .animate-rise-slow-1,
@@ -93,4 +82,20 @@ html, body {
   animation: bounceRise 1.2s ease-out forwards;
   animation-delay: 4.6s;
   opacity: 0;
+}
+
+/* ===== CONTENEDOR PRINCIPAL PARA SCROLL ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Scroll suave entre secciones */
+html {
+  scroll-behavior: smooth;
 }
