@@ -82,7 +82,7 @@ export default function Header() {
             </a>
             <a 
               className="hover:text-accent transition tracking-wide" 
-              href="#aliado"
+              href="#impulsados"
               onClick={handleNavClick}
             >
               Aliado

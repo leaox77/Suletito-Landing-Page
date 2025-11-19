@@ -42,45 +42,41 @@ export default function Testimonials({id}) {
           Impacto real en transporte real
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="flex">
+            <div key={index} className="flex flex-col">
               
-              <div className="mr-4 flex-shrink-0">
-                <img 
-                  src={testimonial.icon} 
-                  alt="Testimonio" 
-                  className="w-10 h-10" 
-                />
+              <div className="flex mb-6">
+                <div className="mr-4 flex-shrink-0">
+                  <img 
+                    src={testimonial.icon} 
+                    alt="Testimonio" 
+                    className="w-10 h-10" 
+                  />
+                </div>
+
+                <div className="flex-1">
+                  <p className="text-lg font-causten font-light italic text-accent leading-relaxed whitespace-pre-line text-left">
+                    {testimonial.text}
+                  </p>
+                </div>
               </div>
 
-              <div className="flex-1">
-                <p className="text-lg font-causten font-light italic text-accent leading-relaxed whitespace-pre-line text-left">
-                  {testimonial.text}
-                </p>
-              </div>
+              <div className="flex items-center">
+                <div className={`w-16 h-16 ${testimonial.profile.color} rounded-full flex items-center justify-center flex-shrink-0 mr-4`}>
+                  <span className="text-[#715c3f] text-lg font-causten font-bold">
+                    {testimonial.profile.initials}
+                  </span>
+                </div>
 
-            </div>
-          ))}
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="flex items-center">
-              
-              <div className={`w-16 h-16 ${testimonial.profile.color} rounded-full flex items-center justify-center flex-shrink-0 mr-4`}>
-                <span className="text-[#715c3f] text-lg font-causten font-bold">
-                  {testimonial.profile.initials}
-                </span>
-              </div>
-
-              <div className="text-left">
-                <h4 className="text-xl font-causten font-bold text-accent">
-                  {testimonial.profile.name}
-                </h4>
-                <p className="text-lg font-causten font-light text-primary">
-                  {testimonial.profile.location}
-                </p>
+                <div className="text-left">
+                  <h4 className="text-xl font-causten font-bold text-accent">
+                    {testimonial.profile.name}
+                  </h4>
+                  <p className="text-lg font-causten font-light text-primary">
+                    {testimonial.profile.location}
+                  </p>
+                </div>
               </div>
 
             </div>

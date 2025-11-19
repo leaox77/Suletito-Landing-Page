@@ -6,22 +6,22 @@ import historialConfiable from "../assets/img/iconos/historial.svg";
 export default function Features() {
   const features = [
     {
-      icon: <img src={bajaSenal} className="w-12 h-12" alt="baja señal" />,
+      icon: <img src={bajaSenal} className="w-10 h-10" alt="baja señal" />,
       title: "Baja señal",
       description: "Funciona incluso con conectividad limitada."
     },
     {
-      icon: <img src={implementacionRapida} className="w-12 h-12" alt="implementacion rapida" />,
+      icon: <img src={implementacionRapida} className="w-10 h-10" alt="implementacion rapida" />,
       title: "Implementacion rapida",
       description: "Herramientas accesibles para transportistas rurales."
     },
     {
-      icon: <img src={inclusion} className="w-12 h-12" alt="inclusion" />,
+      icon: <img src={inclusion} className="w-10 h-10" alt="inclusion" />,
       title: "Impulso a la Inclusión",
       description: "Facilita el acceso a servicios financieros formales."
     },
     {
-      icon: <img src={historialConfiable} className="w-12 h-12" alt="historial confiable" />,
+      icon: <img src={historialConfiable} className="w-10 h-10" alt="historial confiable" />,
       title: "Historial Confiable",
       description: "Datos reales para mototaxis, minibuses y transportistas."
     }
