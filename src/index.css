@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ===== CAUSTEN OBLIQUE ===== */
 @font-face {
   font-family: 'Causten';
   src: url('/src/assets/fonts/Causten-BoldOblique.woff2') format('woff2');
@@ -24,8 +23,6 @@
   font-style: italic;
 }
 
-
-/* ===== CAUSTEN REGULAR ===== */
 @font-face {
   font-family: 'Causten';
   src: url('/src/assets/fonts/Causten-Bold.woff2') format('woff2');
@@ -56,4 +53,16 @@
 
 .animate-scroll-fast {
   animation: scroll-fast 20s linear infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section, div[id] {
+  scroll-margin-top: 80px;
+}
+
+body {
+  overflow-x: hidden;
 }

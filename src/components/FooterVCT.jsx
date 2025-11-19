@@ -7,7 +7,6 @@ export default function FooterVCT() {
     <section className="w-full bg-accent text-white py-12 font-causten">
       <div className="max-w-screen-2xl mx-auto px-12 grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-40"> 
         
-        {/* Velocidad */}
         <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left -mt-1">
           <div className="flex items-center gap-4 self-start">
             <img 
@@ -25,7 +24,6 @@ export default function FooterVCT() {
           </div>
         </div>
 
-        {/* Comodidad */}
         <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
           <div className="flex items-center gap-4 self-start">
             <img 
@@ -43,7 +41,6 @@ export default function FooterVCT() {
           </div>
         </div>
 
-        {/* Trazabilidad */}
         <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left -mt-1">
           <div className="flex items-center gap-4 self-start">
             <img 
