@@ -1,37 +1,21 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-
-import logo from "../assets/react.svg";
+import logo from "../assets/img/logo_sueltito.svg";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full bg-gradient-to-b from-primary to-secondary text-black shadow-lg">
-      <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+    <header className="w-full h-20 bg-gradient-to-b from-primary to-secondary text-black shadow-lg fixed top-0 left-0 z-50">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 h-full">
 
         {/* LOGO + TEXTO */}
         <div className="flex items-center gap-2">
-          {/* Logo SVG */}
-          <svg
-            className="w-10 h-10"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <circle cx="12" cy="12" r="10" />
-          </svg>
-
-          <span className="text-4xl font-causten font-bold text-accent tracking-wide">
-            Sueltito
-          </span>
+            <img src={logo} alt="Sueltito Logo" className="w-40 md:w-40 object-contain" />
         </div>
 
         {/* MENU (DESKTOP) */}
-        <nav className="hidden md:flex items-center gap-12 text-lg font-causten font-bold">
+        <nav className="hidden md:flex items-center gap-20 text-lg font-causten font-bold">
           <a className="hover:text-accent transition tracking-wide" href="#sobre">Sobre nosotros</a>
           <a className="hover:text-accent transition tracking-wide" href="#rural">Sueltito Rural</a>
           <a className="hover:text-accent transition tracking-wide" href="#aliado">Aliado</a>
@@ -55,8 +39,8 @@ export default function Header() {
 
       {/* MOBILE MENU */}
       {open && (
-        <div className="md:hidden px-6 pb-4 animate-fadeIn">
-          <nav className="flex flex-col gap-6 text-lg font-causten font-normal">
+        <div className="md:hidden absolute top-20 left-0 w-full bg-gradient-to-b from-primary to-secondary px-6 pb-4 animate-fadeIn shadow-lg">
+          <nav className="flex flex-col gap-6 text-lg font-causten font-normal py-4">
             <a className="hover:text-accent transition tracking-wide" href="#sobre">Sobre nosotros</a>
             <a className="hover:text-accent transition tracking-wide" href="#rural">Sueltito Rural</a>
             <a className="hover:text-accent transition tracking-wide" href="#aliado">Aliado</a>

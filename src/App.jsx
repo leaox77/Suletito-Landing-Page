@@ -3,10 +3,12 @@ import Footer from "./components/Footer";
 import FooterVCT from "./components/FooterVCT";
 import Inclusion from "./components/Inclusion";
 import Impulsados from "./components/Impulsados";
+import Main from "./components/Main";
+import Rural from "./components/Rural";
 
 function App() {
   return (
-    <>
+    <div className="relative">
       <Header />
 
       <main className="max-w-6xl mx-auto mt-10 px-6">
@@ -22,6 +24,9 @@ function App() {
       <Impulsados/>
       <Footer/>
     </>
+      <Main />
+      <Rural />
+    </div>
   );
 }
 

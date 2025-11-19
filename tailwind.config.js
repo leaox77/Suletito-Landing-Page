@@ -24,6 +24,9 @@ export default {
       fontFamily: {
         causten: ['Causten', 'sans-serif'],
       },
+      height: {
+        screen: '100vh'
+      }
     },
   },
   plugins: [],
